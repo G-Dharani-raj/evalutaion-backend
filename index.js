@@ -18,7 +18,7 @@ app.use("/posts", authenticate);
 app.use("/posts", postRouter);
 
 app.get("/", (req, res) => {
-	res.setEncoding("Home page");
+	res.send("Home page");
 });
 
 app.listen(process.env.PORT, () => {
